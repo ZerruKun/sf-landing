@@ -41,9 +41,6 @@ h2 {
     font-family: 'Yeseva Regular', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 27px;
-    line-height: 37px;
-    letter-spacing: -0.07em;
     text-transform: uppercase;
 }
 
@@ -51,9 +48,6 @@ h3 {
     font-family: 'Yeseva Regular', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -180,3 +174,123 @@ button {
     border-radius: 2px;
 }
 /*General end*/
+
+/*Projects*/
+.projects {
+    height: 1072px;
+    background-color: #131313;
+}
+
+.projects-container {
+    padding-top: 99px;
+    padding-left: 21px;
+}
+
+.projects-menu-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.projects-menu-item {
+    margin-right: 67px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.projects-menu-item a:hover {
+    color: #E3B873;
+}
+
+.projects-contant {
+    display: flex;
+    margin-top: 53px;
+}
+
+.project-discription {
+    max-width: 487px;
+}
+
+.project-discription h2 {
+    max-width: 100px;
+    color: #E3B873;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+}
+
+.project-discription h3 {
+    color: #E3B873;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.project-discription p {
+    padding-top: 34px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.project-detailes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.project-detailes div {
+    min-width: 200px;
+    padding-top: 35px;
+}
+
+.project-detailes span {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.projects-additional-menu {
+    display: flex;
+    padding-top: 81px;
+}
+
+.button-left,
+.button-right {
+    background: none;
+    box-shadow: none;
+}
+.button-left:hover,
+.button-right:hover {
+    filter: brightness(50%);
+}
+
+.additional-menu-list {
+    display: flex;
+    margin: 0px 18px 0 30px;
+
+}
+
+.additional-menu-item div {
+    margin-right: 18px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    height: 12px;
+    width: 12px;
+}
+
+.additional-menu-item div:hover {
+    background:#FFFFFF;
+    cursor: pointer;
+}
+
+.project-image img {
+    width: 674px;
+    margin-left: 50px;
+}
+/*Projects end*/
