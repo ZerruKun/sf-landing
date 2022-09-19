@@ -1,27 +1,137 @@
+/*Common*/
+
 @font-face {
     src: url("../fonts/NunitoSans-Regular.ttf");
     font-family: "NunitoSans Regular";
-    /*font-family: 'Nunito Sans', sans-serif;*/
+    /*font-family: 'NunitoSans Regular', sans-serif;*/
 }
 
 @font-face {
     src: url("../fonts/NunitoSans-Italic.ttf");
     font-family: "NunitoSans Italic";
-    /*font-family: 'Nunito Sans', sans-serif;*/
+    /*font-family: 'NunitoSans Italic', sans-serif;*/
 }
 
 @font-face {
     src: url("../fonts/YesevaOne-Regular.ttf");
     font-family: "YesevaOne Regular";
-    /*font-family: 'Yeseva One', cursive;*/
+    /*font-family: 'Yeseva Regular', cursive;*/
 }
 
 body {
-    max-width: 1438px;
-    margin: 0 auto;
+    /* max-width: 1438px; */
+    font-family: 'NunitoSans Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+h1 {
+    font-family: 'Yeseva Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    /* color: #FFFFFF; */
+}
+
+h2 {
+    font-family: 'Yeseva Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Yeseva Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+button {
+    color: #FFFFFF;;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .container {
-    max-width: 1264px;
+    max-width: 1263px;
     margin: 0 auto;
 }
+
+/*Common end*/
+
+/*Header*/
+
+.header {
+    background-color: #131313;
+}
+
+.header-container {
+    display: flex;
+    min-height: 83px;
+    padding-top: 6px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase; 
+}
+
+.logo {
+    text-align: left;
+    color: #E3B873;
+}
+
+.header-menu-list {
+    display: flex;
+    margin-left: 95px;
+}
+
+.header-menu-item {
+    margin-right: 47px;
+}
+
+.header-menu-item a:hover {
+    color: #E3B873;
+}
+
+.phone-number {
+    margin-left: 67px;
+}
+
+.phone-number a {
+    color: #E3B873;
+    text-decoration-line: underline;
+}
+
+.call-request-button {
+    width: 161px;
+    height: 37px;
+    margin-left: 45px;
+    font-size: 11px;
+    line-height: 15px;
+    font-style: italic;
+}
+
+/*Header end*/
