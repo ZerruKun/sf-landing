@@ -37,14 +37,7 @@ h1 {
     color: #FFFFFF;
 }
 
-h2 {
-    font-family: 'Yeseva Regular', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-h3 {
+h2, h3 {
     font-family: 'Yeseva Regular', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -204,6 +197,7 @@ button {
 
 .projects-menu-item a:hover {
     color: #E3B873;
+    text-decoration: underline;
 }
 
 .projects-contant {
@@ -293,4 +287,157 @@ button {
     width: 674px;
     margin-left: 50px;
 }
+
 /*Projects end*/
+
+/*Online control*/
+.online-control {
+    height: 1072px;
+    background: #FFFFFF;
+}
+
+.online-control-container h3 {
+    /* color: #FFFFFF; */
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.online-control-container p {
+    width: 681px;
+    margin: 0px auto;
+    padding-top: 34px;
+    color: #363636;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.camera {
+    display: flex;
+    padding-top: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-icon {
+    margin: 0 8px;
+}
+
+.camera-line {
+    width: 32px;
+    height: 2px;
+    background: #E3B873;
+    border-radius: 30px;
+}
+
+.repairing-video {
+    position: relative;
+    padding-top: 31px;
+    text-align: center;
+}
+
+.repairing-video video {
+    width: 817px;
+    height: 434px;
+}
+
+/*Кнопка добавлена как на макете, не прячется при проигрывании видео*/ 
+.play-button {
+    position: absolute;
+    right: 47%;
+    bottom: 40%;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.dividing-line {
+    width: 55px;
+    height: 2px;
+    margin: 62px auto 0px;
+    background: #E3B873;
+    border-radius: 30px;
+}
+
+.online-control-registration {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 823px;
+    margin: 91px auto 0px;
+    justify-content: space-between;
+}
+
+.registration-submit-button {
+    width: 200px;
+    height: 51px;
+}
+
+.online-control-name,
+.online-control-phone {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    margin-right: 49px;
+    justify-content: center;
+}
+
+.online-control-name label,
+.online-control-phone label {
+    color: rgba(54, 54, 54, 0.5);
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.online-control-name input,
+.online-control-phone input {
+    padding: 7px 0px;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.online-control-registration input::placeholder {
+    color: #363636;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.online-control-personal {
+    padding-top: 39px;
+    padding-left: 33%;
+}
+
+.checkbox-label {
+    cursor: pointer;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+.checkbox-text {
+    color: #181818;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+/*Online control end*/

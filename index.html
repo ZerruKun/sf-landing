@@ -91,7 +91,6 @@
                         </div>
                         <div class="projects-additional-menu">
                             <button class="button-left"><img src="./images/projects/left-arrow.svg" alt="left arrow"></button>
-                            <!--Check it on css building-->
                             <ul class="additional-menu-list">
                                 <li class="additional-menu-item"><div></div></li>
                                 <li class="additional-menu-item"><div></div></li>
@@ -112,26 +111,44 @@
         <section class="online-control">
             <div class="container online-control-container">
                 <h3>online control</h3>
-                <div class="camera-icon">
-                    <img src="" alt="camera icon">
+                <div class="camera">
+                    <div class="camera-line"></div>
+                    <div class="camera-icon">
+                        <img src="./images/online-control/camera-icon.svg" alt="camera icon">
+                    </div>
+                    <div class="camera-line"></div>
                 </div>
-                <img src="" alt="repairing process">
-                <hr>
+                <div class="repairing-video">
+                    <video src="./video/testvideo.mp4" controls poster="./images/online-control/video-preview.jpg"></video>
+                    <button class="play-button"><img src="./images/online-control/play-button.svg" alt="play button"></button>
+                </div>
+                <div class="dividing-line"></div>
                 <p>
                     At each facility, a camera is installed that broadcasts the progress of
                     work on the clock. At any time, you can go to our website and monitor
                     the progress of work in your apartment. You can watch the live broadcast
-                    from one of our facilities! Leave a request below and you will receive a
+                    from one of our facilities!
+                    <br>
+                    Leave a request below and you will receive a
                     link to the broadcast.
                 </p>
                 <form class="online-control-registration">
-                    <label for="online-control-name">Name</label>
-                    <input name="online-control-name" type="text" placeholder="What is your name:">
-                    <label for="online-control-phone">Phone</label>
-                    <input name="online-control-phone" type="text" placeholder="Your phone number:">
+                    <div class="online-control-name">
+                        <label for="online-control-name">Name</label>
+                        <input name="online-control-name" type="text" placeholder="What is your name:">
+                    </div>
+                    <div class="online-control-phone">
+                        <label for="online-control-phone">Phone</label>
+                        <input name="online-control-phone" type="text" placeholder="Your phone number:">
+                    </div>
                     <button class="registration-submit-button">Submit</button>
-                    <input type="checkbox" name="online-control-personal">
-                    <label for="online-control-personal">I agree to the processing of personal data</label>
+                    <div class="online-control-personal">
+                        <label class="checkbox-label">
+                          <input class="checkbox" type="checkbox">
+                          <span class="fake"></span>
+                          <span class="checkbox-text">I agree to the processing of personal data</span>
+                        </label>
+                    </div>
                 </form>
             </div>
         </section>
