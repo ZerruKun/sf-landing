@@ -170,7 +170,7 @@ button {
 
 /*Projects*/
 .projects {
-    height: 1072px;
+    height: 752px;
     background-color: #131313;
 }
 
@@ -292,12 +292,24 @@ button {
 
 /*Online control*/
 .online-control {
+    position: relative;
     height: 1072px;
     background: #FFFFFF;
 }
 
+.stylish-helper {
+    position: absolute;
+    height: 320px;
+    width: 100vw;
+    background-color: #131313;
+}
+
+.online-control-container {
+    position: relative;
+}
+
 .online-control-container h3 {
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
