@@ -20,6 +20,7 @@
 
 body {
     /* max-width: 1438px; */
+    background: #FFFFFF;
     font-family: 'NunitoSans Regular', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -128,8 +129,11 @@ button {
 /*Header end*/
 
 /*General*/
+
 .general {
     background-image: url("../images/general/background.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
     height: 707px;
 }
 
@@ -166,9 +170,11 @@ button {
     border: 1px solid #FFFFFF;
     border-radius: 2px;
 }
+
 /*General end*/
 
 /*Projects*/
+
 .projects {
     height: 752px;
     background-color: #131313;
@@ -291,6 +297,7 @@ button {
 /*Projects end*/
 
 /*Online control*/
+
 .online-control {
     position: relative;
     height: 1072px;
@@ -300,7 +307,7 @@ button {
 .stylish-helper {
     position: absolute;
     height: 320px;
-    width: 100vw;
+    width: 100%;
     background-color: #131313;
 }
 
@@ -312,16 +319,6 @@ button {
     color: #FFFFFF;
     font-size: 20px;
     line-height: 28px;
-    text-align: center;
-}
-
-.online-control-container p {
-    width: 681px;
-    margin: 0px auto;
-    padding-top: 34px;
-    color: #363636;
-    font-size: 18px;
-    line-height: 37px;
     text-align: center;
 }
 
@@ -341,6 +338,16 @@ button {
     height: 2px;
     background: #E3B873;
     border-radius: 30px;
+}
+
+.online-control-container p {
+    width: 681px;
+    margin: 0px auto;
+    padding-top: 34px;
+    color: #363636;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
 }
 
 .repairing-video {
@@ -404,6 +411,8 @@ button {
 .online-control-name input,
 .online-control-phone input {
     padding: 7px 0px;
+    outline: 0;
+    outline-offset: 0;
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
@@ -446,10 +455,283 @@ button {
     opacity: 1;
 }
 
-.checkbox-text {
+.online-control-checkbox-text {
+    padding-left: 5px;
     color: #181818;
     font-size: 14px;
     line-height: 23px;
 }
 
 /*Online control end*/
+
+/*Repairing*/
+
+.repairing {
+    height: 1700px;
+}
+
+.repairing-container h2 {
+    padding-top: 45px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #181818;
+}
+
+.tools {
+    display: flex;
+    padding-top: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools-icon {
+    margin: 0 8px;
+}
+
+.tools-line {
+    width: 32px;
+    height: 2px;
+    background: #E3B873;
+    border-radius: 30px;
+}
+
+.repair-types {
+    display: flex;
+    margin-top: 31px;
+    justify-content: center;
+    min-height: 710px;
+}
+
+.repair-type {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.repair-type:last-child {
+    margin-right: 0px;
+}
+
+.repair-discription {
+    position: absolute;
+    top: 39%;
+    left: 10%;
+    min-height: 300px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+/*Чисто визуально шрифт жирный, но в макете этого нет*/
+.repair-type h3 {
+    margin: 25px 0px 13px;
+    padding-left: 34px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #363636;
+}
+
+.repair-discription-list {
+    padding: 0px 34px;
+    list-style-position: inside;
+    list-style-type: disc;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.repair-from-button {
+    position: absolute;
+    bottom: -8%;
+    width: 228px;
+    height: 54px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.measuring-request {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.measuring-features {
+    background-image: url("../images/repairing/features-background.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid black;
+    max-width: 650px;
+}
+
+.measuring-feature {
+    display: flex;
+    align-items: center;
+    margin: 110px 70px 110px 210px;
+}
+
+.measuring-feature:first-child {
+    margin-top: 120px;
+}
+
+.measuring-feature:last-child {
+    margin-bottom: 56px;
+}
+
+.measuring-feature-number {
+    padding: 10px;
+    color: #FFFFFF;
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 50%;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.measuring-feature-text {
+    margin-left: 17px;
+    color: #363636;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.measuring-request-form {
+    display: flex;
+    width: 506px;
+    height: 535px;
+    margin-top: 124px;
+    margin-right: 50px;
+    flex-direction: column;
+    align-items: center;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.measuring-request-form h3 {
+    margin: 28px 0px 39px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: none;
+}
+
+.measuring-request-name,
+.measuring-request-phone,
+.measuring-request-email {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    width: 408px;
+    justify-content: center;
+}
+
+.measuring-request-email {
+    margin-bottom: 18px;
+}
+
+.measuring-request-name label,
+.measuring-request-phone label,
+.measuring-request-email {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.measuring-request-name input,
+.measuring-request-phone input,
+.measuring-request-email input {
+    padding: 7px 0px;
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    background-color: #131313;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.measuring-request-form input::placeholder {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.measuring-request-personal {
+    margin-right: 128px;
+}
+
+.checkbox-label {
+    cursor: pointer;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+.measuring-request-checkbox-text {
+    padding-left: 5px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.form-call-button {
+    margin-top: 39px;
+    margin-left: 196px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    width: 213px;
+    height: 51px;
+}
+
+.money-safe {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.money-safe-text {
+    width: 220px;
+    padding-top: 5px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.piggy-bank{
+    width: 72px;
+    height: 72px;
+}
+
+/*Repairing end*/
