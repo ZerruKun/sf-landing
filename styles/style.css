@@ -467,7 +467,7 @@ button {
 /*Repairing*/
 
 .repairing {
-    height: 1700px;
+    height: 1900px;
 }
 
 .repairing-container h2 {
@@ -554,7 +554,6 @@ button {
 }
 
 .measuring-request {
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
@@ -563,7 +562,6 @@ button {
     background-image: url("../images/repairing/features-background.jpg");
     background-repeat:no-repeat;
     background-size: 100% 100%;
-    border: 1px solid black;
     max-width: 650px;
 }
 
@@ -715,6 +713,7 @@ button {
 
 .money-safe {
     display: flex;
+    margin-right: 220px;
     flex-direction: row;
     justify-content: flex-end;
     cursor: pointer;
@@ -735,3 +734,90 @@ button {
 }
 
 /*Repairing end*/
+
+/*Design exemples*/
+
+.design-exemples {
+    background-image: url("../images/design-exemples/design-background.jpg");
+    background-size: 100% 100%;
+}
+
+.design-exemples-container {
+    display: flex;
+    height: 864px;
+}
+
+.desing-name {
+    margin-top: 137px;
+}
+
+.design-exemples-container h2 {
+    width: 300px;
+    color: #E3B873;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+.desing-name-list {
+    margin-top: 47px;
+}
+
+.desing-name-item {
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.desing-name-item:last-child {
+    margin-bottom: 0px;
+}
+
+.desing-name-item a:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.design-exemples-images {
+    position: relative;
+    margin-left: 200px;
+    display: flex;
+}
+
+.design-exemples-image {
+    width: 354px;
+}
+
+.design-exemples-image:first-child {
+    margin-bottom: 38px;
+}
+
+.design-exemples-line-one {
+    position: absolute;
+    top: -41px;
+}
+
+.design-exemples-line-two {
+    position: absolute;
+    top: -112px;
+    left: 397px;
+}
+
+.design-exemples-line-one .design-exemples-image:nth-child(1) img{
+    height: 558px;
+}
+
+.design-exemples-line-one .design-exemples-image:nth-child(2) img{
+    height: 350px;
+}
+
+.design-exemples-line-two .design-exemples-image:nth-child(1) img{
+    height: 275px;
+}
+
+.design-exemples-line-two .design-exemples-image:nth-child(2) img{
+    height: 624px;
+}
+
+/*Design exemples end*/
