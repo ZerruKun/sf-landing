@@ -821,3 +821,119 @@ button {
 }
 
 /*Design exemples end*/
+
+/*Clients reviews*/
+
+.clients-reviews-container h2 {
+    margin-top: 110px;
+    color: #181818;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.handshake {
+    display: flex;
+    padding-top: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.handshake-icon {
+    margin: 0 8px;
+}
+
+.handshake-line {
+    width: 32px;
+    height: 2px;
+    background: #E3B873;
+    border-radius: 30px;
+}
+
+.customers-recommend {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 39px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #363636;
+    text-align: center;
+}
+
+.customers-reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-review {
+    position: relative;
+    width: 376px;
+    height: 428px;
+    padding: 13px 32px 90px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.customer-review p {
+    padding-top: 23px;
+    color: #959595;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+}
+
+.customer-avatar img{
+    border-radius: 50%;
+}
+
+.customer-name {
+    width: 150px;
+    margin-left: 25px;
+    color: #181818;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.terms-days {
+    position: absolute;
+    left: 0%;
+    bottom: -6%;
+    display: flex;
+    width: 294px;
+    height: 54px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.terms,
+.days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E3B873;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.terms {
+    width: 135px;
+}
+
+.days {
+    width: 158px;
+}
+
+.terms-value,
+.days-value {
+    margin-left: 15px;
+}
+
+/*Clients reviews end*/
