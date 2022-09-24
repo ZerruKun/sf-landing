@@ -443,26 +443,45 @@
             <div class="container contacts-container">
                 <form class="question-form">
                     <h3>have any questions?</h3>
-                    <label for="question-name">Name</label>
-                    <input name="question-name" type="text" placeholder="What is your name:">
-                    <label for="question-phone">Phone</label>
-                    <input name="question-phone" type="text" placeholder="Your phone number:">
-                    <label for="question-text">Question</label>
-                    <input name="question-text" type="text" placeholder="I want to know:">
-                    <input type="checkbox" name="questions-personal">
-                    <label for="question-personal">I agree to the processing of personal data</label>
+                    <div class="name-phone">
+                        <div class="question-name">
+                            <label for="question-name">Name</label>
+                            <input name="question-name" type="text" placeholder="What is your name:">
+                        </div>
+                        <div class="question-phone">
+                            <label for="question-phone">Phone</label>
+                            <input name="question-phone" type="text" placeholder="Your phone number:">
+                        </div>
+                    </div>
+                    <div class="question-text">
+                        <label for="question-text">Question</label>
+                        <input name="question-text" type="text" placeholder="I want to know:">
+                    </div>
+                    <div class="question-personal">
+                        <label class="checkbox-label">
+                          <input class="checkbox" type="checkbox">
+                          <span class="fake"></span>
+                          <span class="question-personal-checkbox-text">I agree to the processing of personal data</span>
+                        </label>
+                    </div>
                     <button class="question-submit-button">Submit</button>
                 </form>
                 <span class="location">
                     Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
                 </span>
                 <ul class="social-list">
-                    <li class="social-item"><a><img src="" alt="envelope icon"></a></li>
-                    <li class="social-item"><a><img src="" alt="instagram icon"></a></li>
+                    <li class="social-item"><a><img src="./images/contacts/mail.svg" alt="envelope icon"></a></li>
+                    <li class="social-item"><a><img src="./images/contacts/instagram.svg" alt="instagram icon"></a></li>
                 </ul>
-                <div class="location-on-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.5598455860804!2d39.720983615794864!3d47.
+                24475492089659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47ac4fd0b%3A0xcc39a9f1a09d4979!2z0YPQuy
+                4g0J3QsNC90YHQtdC90LAsIDIzOSwg0KDQvtGB0YLQvtCyLdC90LAt0JTQvtC90YMsINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4sIDM0NDA
+                zOA!5e0!3m2!1sru!2sru!4v1664018687432!5m2!1sru!2sru" width="950" height="470" style="border:0;" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location-on-map">
+                </iframe>
+                <!-- <div class="location-on-map">
                     <img src="" alt="location on map">
-                </div>
+                </div> -->
             </div>
         </section>
         <!--Contacts end-->

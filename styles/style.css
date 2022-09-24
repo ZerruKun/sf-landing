@@ -937,3 +937,145 @@ button {
 }
 
 /*Clients reviews end*/
+
+/*Contacts*/
+
+.stylish-helper-2 {
+    height: 416px;
+    background-image: url("../images/contacts/helper-background.jpg");
+    background-repeat: repeat-x;
+}
+
+.contacts {
+    position: relative;
+    height: 1450px;
+    background-image: url("../images/contacts/contacts-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-form {
+    position: absolute;
+    top: 185px;
+    display: flex;
+    width: 883px;
+    height: 445px;
+    flex-direction: column;
+    align-items: center;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.question-form h3 {
+    margin: 34px 0px 46px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.name-phone {
+    display: flex;
+    justify-content: center;
+}
+
+
+.question-name,
+.question-phone,
+.question-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-phone {
+    margin-left: 55px;
+}
+
+.question-text {
+    margin: 49px 0px 48px;
+}
+
+.question-name label,
+.question-phone label,
+.question-text label {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.question-name input,
+.question-phone input,
+.question-text input {
+    font-size: 14px;
+    line-height: 23px;
+    outline: 0;
+    outline-offset: 0;
+    color: #FFFFFF;
+    border: none;
+    background-color: #131313;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.question-name input,
+.question-phone input {
+    width: 231px;
+}
+
+.question-text input {
+    width: 517px;
+}
+
+.question-name input::placeholder,
+.question-phone input::placeholder,
+.question-text input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.question-personal-checkbox-text {
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+
+.question-submit-button {
+    width: 200px;
+    height: 51px;
+    margin-top: 50px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background: #E3B873;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+}
+
+.location {
+    width: 540px;
+    margin: 320px 0px 26px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.social-list {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.social-item:first-child{
+    margin-right: 15px;
+}
+
+/*Contacts end*/
