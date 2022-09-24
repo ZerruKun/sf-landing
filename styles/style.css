@@ -1079,3 +1079,58 @@ button {
 }
 
 /*Contacts end*/
+
+/*Footer*/
+
+.footer {
+    background-color: #131313;
+}
+
+.footer-container {
+    display: flex;
+    height: 133px;
+    padding-top: 6px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase; 
+}
+
+.footer-logo {
+    text-align: left;
+    color: #E3B873;
+}
+
+.footer-menu-list {
+    display: flex;
+    margin-left: 95px;
+}
+
+.footer-menu-item {
+    margin-right: 47px;
+}
+
+.footer-menu-item a:hover {
+    color: #E3B873;
+}
+
+.footer-phone-number {
+    margin-left: 67px;
+}
+
+.footer-phone-number a {
+    color: #E3B873;
+    text-decoration-line: underline;
+}
+
+.footer-call-request-button {
+    width: 161px;
+    height: 37px;
+    margin-left: 45px;
+    font-size: 11px;
+    line-height: 15px;
+    font-style: italic;
+}
+
+/*Footer end*/
