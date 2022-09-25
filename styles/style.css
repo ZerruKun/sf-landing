@@ -3,19 +3,16 @@
 @font-face {
     src: url("../fonts/NunitoSans-Regular.ttf");
     font-family: "NunitoSans Regular";
-    /*font-family: 'NunitoSans Regular', sans-serif;*/
 }
 
 @font-face {
     src: url("../fonts/NunitoSans-Italic.ttf");
     font-family: "NunitoSans Italic";
-    /*font-family: 'NunitoSans Italic', sans-serif;*/
 }
 
 @font-face {
     src: url("../fonts/YesevaOne-Regular.ttf");
     font-family: "YesevaOne Regular";
-    /*font-family: 'Yeseva Regular', cursive;*/
 }
 
 body {
@@ -28,7 +25,7 @@ body {
 }
 
 h1 {
-    font-family: 'Yeseva Regular', sans-serif;
+    font-family: 'YesevaOne Regular', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -38,7 +35,7 @@ h1 {
 }
 
 h2, h3 {
-    font-family: 'Yeseva Regular', sans-serif;
+    font-family: 'YesevaOne Regular', cursive;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
@@ -65,20 +62,63 @@ button {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 }
 
+/*Для кнопок, на которых на макете явно не обозначен эффект при наведении*/
+button:hover {
+    filter: brightness(120%);
+}
+
+/*Контейнер для контента секции*/
 .container {
     max-width: 1263px;
     margin: 0 auto;
 }
 
+/*Чекбокс персональных данных в формах*/
+.checkbox-label {
+    cursor: pointer;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    justify-content: center;
+    background: #E3B873;
+    color: #fff;
+}
+
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+.checkbox-text {
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
 /*Common end*/
 
-/*Header*/
+/*Header and Footer*/
 
-.header {
+.header,
+.footer {
     background-color: #131313;
 }
 
-.header-container {
+.header-container,
+.footer-container {
     height: 83px;
     display: flex;
     padding-top: 6px;
@@ -89,34 +129,49 @@ button {
     text-transform: uppercase; 
 }
 
-.logo {
+.header-container {
+    height: 83px;
+}
+
+.footer-container {
+    height: 133px;
+}
+
+.logo,
+.footer-logo {
     text-align: left;
     color: #E3B873;
 }
 
-.header-menu-list {
+.header-menu-list,
+.footer-menu-list {
     display: flex;
     margin-left: 95px;
 }
 
-.header-menu-item {
+.header-menu-item,
+.footer-menu-item {
     margin-right: 47px;
 }
 
-.header-menu-item a:hover {
+.header-menu-item a:hover,
+.footer-menu-item a:hover {
     color: #E3B873;
 }
 
-.phone-number {
+.phone-number,
+.footer-phone-number {
     margin-left: 67px;
 }
 
-.phone-number a {
+.phone-number a,
+.footer-phone-number a {
     text-decoration-line: underline;
     color: #E3B873;
 }
 
-.call-request-button {
+.call-request-button,
+.footer-call-request-button {
     width: 161px;
     height: 37px;
     margin-left: 45px;
@@ -125,7 +180,7 @@ button {
     font-style: italic;
 }
 
-/*Header end*/
+/*Header and Footerend*/
 
 /*General*/
 
@@ -161,13 +216,19 @@ button {
     width: 207px;
     height: 51px;
     margin-top: 51px;
+    border-radius: 2px;
+    border: 1px solid #FFFFFF;
+    background: none;
+}
+
+.cost-calculate-button:hover,
+.application-submit-button:hover {
+    background: #E3B873;
+    filter: brightness(100%);
 }
 
 .application-submit-button {
     margin-left: 20px;
-    background: none;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
 }
 
 /*General end*/
@@ -216,18 +277,16 @@ button {
 
 .project-discription h2 {
     max-width: 100px;
-    color: #E3B873;
     font-size: 27px;
     line-height: 37px;
     letter-spacing: -0.07em;
-    text-transform: uppercase;
+    color: #E3B873;
 }
 
 .project-discription h3 {
     color: #E3B873;
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;
 }
 
 .project-discription p {
@@ -428,37 +487,7 @@ button {
     padding-left: 33%;
 }
 
-.checkbox-label {
-    cursor: pointer;
-}
-
-.checkbox{
-    display: none;
-}
-
-.fake{
-    width: 15px;
-    height: 15px;
-    display: inline-flex;
-    justify-content: center;
-    background: #E3B873;
-    color: #fff;
-}
-
-.fake::before{
-    content:"\2714";
-    opacity: 0;
-    transition: .2s;
-}
-
-.checkbox:checked + .fake::before{
-    opacity: 1;
-}
-
-.online-control-checkbox-text {
-    padding-left: 5px;
-    font-size: 14px;
-    line-height: 23px;
+.online-control-personal .checkbox-text {
     color: #181818;
 }
 
@@ -547,10 +576,8 @@ button {
     height: 54px;
     position: absolute;
     bottom: -8%;
-    text-align: center;
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
 }
 
 .measuring-request {
@@ -668,47 +695,11 @@ button {
     margin-right: 128px;
 }
 
-.checkbox-label {
-    cursor: pointer;
-}
-
-.checkbox{
-    display: none;
-}
-
-.fake{
-    width: 15px;
-    height: 15px;
-    display: inline-flex;
-    justify-content: center;
-    background: #E3B873;
-    color: #fff;
-}
-
-.fake::before{
-    content:"\2714";
-    opacity: 0;
-    transition: .2s;
-}
-
-.checkbox:checked + .fake::before{
-    opacity: 1;
-}
-
-.measuring-request-checkbox-text {
-    padding-left: 5px;
-    font-size: 14px;
-    line-height: 23px;
-    color: #FFFFFF;
-}
-
 .form-call-button {
     width: 213px;
     height: 51px;
     margin-top: 39px;
     margin-left: 196px;
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
 }
 
 .money-safe {
@@ -717,6 +708,10 @@ button {
     margin-right: 220px;
     justify-content: flex-end;
     cursor: pointer;
+}
+
+.money-safe:hover {
+    filter: brightness(120%);
 }
 
 .money-safe-text {
@@ -755,7 +750,6 @@ button {
     width: 300px;
     font-size: 27px;
     line-height: 37px;
-    text-transform: uppercase;
     color: #E3B873;
 }
 
@@ -824,6 +818,11 @@ button {
 
 /*Clients reviews*/
 
+.clients-reviews {
+    position: relative;
+    z-index: 1;
+}
+
 .clients-reviews-container h2 {
     margin-top: 110px;
     font-size: 20px;
@@ -891,6 +890,7 @@ button {
     border-radius: 50%;
 }
 
+/*Чисто визуально шрифт жирный, но в макете этого нет*/
 .customer-name {
     width: 150px;
     margin-left: 25px;
@@ -944,6 +944,7 @@ button {
     height: 416px;
     background-image: url("../images/contacts/helper-background.jpg");
     background-repeat: repeat-x;
+    z-index: -1;
 }
 
 .contacts {
@@ -952,7 +953,6 @@ button {
     background-image: url("../images/contacts/contacts-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    z-index: -1;
 }
 
 .contacts-container {
@@ -1040,23 +1040,12 @@ button {
     color: #FFFFFF;
 }
 
-.question-personal-checkbox-text {
-    padding-left: 5px;
-    font-size: 14px;
-    line-height: 23px;
-    color: #FFFFFF;
-}
-
-
 .question-submit-button {
     width: 200px;
     height: 51px;
     margin-top: 50px;
     font-size: 13px;
     line-height: 27px;
-    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
-    background: #E3B873;
-    color: #FFFFFF;
 }
 
 .location {
@@ -1079,58 +1068,3 @@ button {
 }
 
 /*Contacts end*/
-
-/*Footer*/
-
-.footer {
-    background-color: #131313;
-}
-
-.footer-container {
-    height: 133px;
-    display: flex;
-    padding-top: 6px;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 11px;
-    line-height: 15px;
-    text-transform: uppercase; 
-}
-
-.footer-logo {
-    text-align: left;
-    color: #E3B873;
-}
-
-.footer-menu-list {
-    display: flex;
-    margin-left: 95px;
-}
-
-.footer-menu-item {
-    margin-right: 47px;
-}
-
-.footer-menu-item a:hover {
-    color: #E3B873;
-}
-
-.footer-phone-number {
-    margin-left: 67px;
-}
-
-.footer-phone-number a {
-    text-decoration-line: underline;
-    color: #E3B873;
-}
-
-.footer-call-request-button {
-    width: 161px;
-    height: 37px;
-    margin-left: 45px;
-    font-size: 11px;
-    line-height: 15px;
-    font-style: italic;
-}
-
-/*Footer end*/
