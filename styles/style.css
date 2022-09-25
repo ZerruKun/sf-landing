@@ -1,0 +1,1075 @@
+/*Common*/
+
+@font-face {
+    src: url("../fonts/NunitoSans-Regular.ttf");
+    font-family: "NunitoSans Regular";
+}
+
+@font-face {
+    src: url("../fonts/NunitoSans-Italic.ttf");
+    font-family: "NunitoSans Italic";
+}
+
+@font-face {
+    src: url("../fonts/YesevaOne-Regular.ttf");
+    font-family: "YesevaOne Regular";
+}
+
+body {
+    font-family: 'NunitoSans Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    background: #FFFFFF;
+}
+
+h1 {
+    font-family: 'YesevaOne Regular', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h2, h3 {
+    font-family: 'YesevaOne Regular', cursive;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+button {
+    font-family: 'NunitoSans Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #FFFFFF;;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
+
+/*Для кнопок, на которых на макете явно не обозначен эффект при наведении*/
+button:hover {
+    filter: brightness(120%);
+}
+
+/*Контейнер для контента секции*/
+.container {
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+/*Чекбокс персональных данных в формах*/
+.checkbox-label {
+    cursor: pointer;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    justify-content: center;
+    background: #E3B873;
+    color: #fff;
+}
+
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+.checkbox-text {
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+/*Common end*/
+
+/*Header and Footer*/
+
+.header,
+.footer {
+    background-color: #131313;
+}
+
+.header-container,
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase; 
+}
+
+.header-container {
+    padding: 23px 0px;
+}
+
+.footer-container {
+    padding: 48px 0px;
+}
+
+.logo,
+.footer-logo {
+    text-align: left;
+    color: #E3B873;
+}
+
+.header-menu-list,
+.footer-menu-list {
+    display: flex;
+    margin-left: 95px;
+}
+
+.header-menu-item,
+.footer-menu-item {
+    margin-right: 47px;
+}
+
+.header-menu-item a:hover,
+.footer-menu-item a:hover {
+    color: #E3B873;
+}
+
+.phone-number,
+.footer-phone-number {
+    margin-left: 67px;
+}
+
+.phone-number a,
+.footer-phone-number a {
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+
+.phone-number a:hover,
+.footer-phone-number a:hover {
+    filter: brightness(120%);
+}
+
+.call-request-button,
+.footer-call-request-button {
+    width: 161px;
+    height: 37px;
+    margin-left: 45px;
+    font-size: 11px;
+    line-height: 15px;
+    font-style: italic;
+}
+
+/*Header and Footerend*/
+
+/*General*/
+
+.general {
+    background-image: url("../images/general/background.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.general-container {
+    padding: 194px 0px 180px 21px;
+}
+
+.general-container h1 {
+    max-width: 520px;
+}
+
+.general-container h1 span{
+    color: #E3B873;    
+}
+
+.general-container p {
+    margin-top: 19px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.cost-calculate-button,
+.application-submit-button {
+    width: 207px;
+    height: 51px;
+    margin-top: 51px;
+    border-radius: 2px;
+    border: 1px solid #FFFFFF;
+    background: none;
+}
+
+.cost-calculate-button:hover,
+.application-submit-button:hover {
+    background: #E3B873;
+    filter: brightness(100%);
+}
+
+.application-submit-button {
+    margin-left: 20px;
+}
+
+/*General end*/
+
+/*Projects*/
+
+.projects {
+    background-color: #131313;
+}
+
+.projects-container {
+    padding: 99px 0px 70px 21px;
+}
+
+.projects-menu-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.projects-menu-item {
+    margin-right: 67px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.projects-menu-item a:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.projects-contant {
+    display: flex;
+    margin-top: 53px;
+}
+
+.project-discription {
+    max-width: 487px;
+}
+
+.project-discription h2 {
+    max-width: 100px;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    color: #E3B873;
+}
+
+.project-discription h3 {
+    color: #E3B873;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.project-discription p {
+    padding-top: 34px;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.project-detailes {
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-detailes div {
+    min-width: 200px;
+    padding-top: 35px;
+}
+
+.project-detailes span {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.projects-additional-menu {
+    display: flex;
+    padding-top: 81px;
+}
+
+.button-left,
+.button-right {
+    background: none;
+    box-shadow: none;
+}
+
+.button-left:hover,
+.button-right:hover {
+    filter: brightness(50%);
+}
+
+.additional-menu-list {
+    display: flex;
+    margin: 0px 18px 0 30px;
+
+}
+
+.additional-menu-item div {
+    height: 12px;
+    width: 12px;
+    margin-right: 18px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.additional-menu-item div:hover {
+    background:#FFFFFF;
+    cursor: pointer;
+}
+
+.project-image img {
+    max-width: 674px;
+    margin-left: 50px;
+}
+
+/*Projects end*/
+
+/*Online control*/
+
+.online-control {
+    position: relative;
+    padding-bottom: 90px;
+    background: #FFFFFF;
+}
+
+.stylish-helper {
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    background-color: #131313;
+}
+
+.online-control-container {
+    position: relative;
+}
+
+.online-control-container h3 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.camera {
+    display: flex;
+    padding-top: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-icon {
+    margin: 0 8px;
+}
+
+.camera-line {
+    width: 32px;
+    height: 2px;
+    border-radius: 30px;
+    background: #E3B873;
+}
+
+.online-control-container p {
+    width: 681px;
+    margin: 0px auto;
+    padding-top: 34px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+}
+
+.repairing-video {
+    position: relative;
+    padding-top: 31px;
+    text-align: center;
+}
+
+.repairing-video video {
+    width: 817px;
+    height: 434px;
+}
+
+/*Кнопка добавлена как на макете, не прячется при проигрывании видео*/ 
+.play-button {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    right: 47%;
+    bottom: 40%;
+    border-radius: 50%;
+}
+
+.dividing-line {
+    width: 55px;
+    height: 2px;
+    margin: 62px auto 0px;
+    border-radius: 30px;
+    background: #E3B873;
+}
+
+.online-control-registration {
+    max-width: 823px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 91px auto 0px;
+    justify-content: space-between;
+}
+
+.registration-submit-button {
+    width: 200px;
+    height: 51px;
+}
+
+.online-control-name,
+.online-control-phone {
+    width: 231px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 49px;
+    justify-content: center;
+}
+
+.online-control-name label,
+.online-control-phone label {
+    color: rgba(54, 54, 54, 0.5);
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.online-control-name input,
+.online-control-phone input {
+    padding: 7px 0px;
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.online-control-registration input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+.online-control-personal {
+    padding-top: 39px;
+    padding-left: 33%;
+}
+
+.online-control-personal .checkbox-text {
+    color: #181818;
+}
+
+/*Online control end*/
+
+/*Repairing*/
+
+.repairing {
+    padding-bottom: 240px;
+}
+
+.repairing-container h2 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #181818;
+}
+
+.tools {
+    display: flex;
+    padding-top: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools-icon {
+    margin: 0 8px;
+}
+
+.tools-line {
+    width: 32px;
+    height: 2px;
+    background: #E3B873;
+    border-radius: 30px;
+}
+
+.repair-types {
+    display: flex;
+    margin-top: 31px;
+    justify-content: center;
+    min-height: 710px;
+}
+
+.repair-type {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.repair-type:last-child {
+    margin-right: 0px;
+}
+
+.repair-discription {
+    min-height: 300px;
+    position: absolute;
+    top: 39%;
+    left: 10%;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+/*Чисто визуально шрифт жирный, но в макете этого нет*/
+.repair-type h3 {
+    margin: 25px 0px 13px;
+    padding-left: 34px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #363636;
+}
+
+.repair-discription-list {
+    padding: 0px 34px;
+    list-style-position: inside;
+    list-style-type: disc;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.repair-from-button {
+    width: 228px;
+    height: 54px;
+    position: absolute;
+    bottom: -8%;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.measuring-request {
+    display: flex;
+    justify-content: space-between;
+}
+
+.measuring-features {
+    max-width: 650px;
+    background-image: url("../images/repairing/features-background.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.measuring-feature {
+    display: flex;
+    margin: 110px 70px 110px 210px;
+    align-items: center;
+}
+
+.measuring-feature:first-child {
+    margin-top: 120px;
+}
+
+.measuring-feature:last-child {
+    margin-bottom: 56px;
+}
+
+.measuring-feature-number {
+    padding: 10px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border: 8px solid #FFFFFF;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+
+.measuring-feature-text {
+    margin-left: 17px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+
+.measuring-request-form {
+    width: 506px;
+    height: 535px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 124px;
+    margin-right: 50px;
+    align-items: center;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.measuring-request-form h3 {
+    margin: 28px 0px 39px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: none;
+    color: #FFFFFF;
+}
+
+.measuring-request-name,
+.measuring-request-phone,
+.measuring-request-email {
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.measuring-request-email {
+    margin-bottom: 18px;
+}
+
+.measuring-request-name label,
+.measuring-request-phone label,
+.measuring-request-email {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.measuring-request-name input,
+.measuring-request-phone input,
+.measuring-request-email input {
+    padding: 7px 0px;
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    background-color: #131313;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.measuring-request-form input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.measuring-request-personal {
+    margin-right: 128px;
+}
+
+.form-call-button {
+    width: 213px;
+    height: 51px;
+    margin-top: 39px;
+    margin-left: 196px;
+}
+
+.money-safe-container {
+    display: flex;
+    margin-right: 220px;
+    justify-content: flex-end;
+}
+
+.money-safe {
+    width: 285px;
+    display: flex;
+}
+
+.money-safe:hover {
+    filter: brightness(120%);
+}
+
+.money-safe-text {
+    width: 220px;
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.piggy-bank{
+    width: 72px;
+    height: 72px;
+}
+
+/*Repairing end*/
+
+/*Design exemples*/
+
+.design-exemples {
+    background-image: url("../images/design-exemples/design-background.jpg");
+    background-size: 100% 100%;
+}
+
+.design-exemples-container {
+    display: flex;
+}
+
+.desing-name {
+    margin-top: 137px;
+}
+
+.design-exemples-container h2 {
+    width: 300px;
+    font-size: 27px;
+    line-height: 37px;
+    color: #E3B873;
+}
+
+.desing-name-list {
+    margin-top: 47px;
+}
+
+.desing-name-item {
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.desing-name-item:last-child {
+    margin-bottom: 0px;
+}
+
+.desing-name-item a:hover {
+    text-decoration: underline;
+    color: #E3B873;
+}
+
+.design-exemples-images {
+    position: relative;
+    display: flex;
+    margin-left: 200px;
+}
+
+.design-exemples-image {
+    width: 354px;
+}
+
+.design-exemples-image:first-child {
+    margin-bottom: 38px;
+}
+
+.design-exemples-line-one {
+    position: absolute;
+    top: -41px;
+}
+
+.design-exemples-line-two {
+    position: absolute;
+    top: -112px;
+    left: 397px;
+}
+
+.design-exemples-line-one .design-exemples-image:nth-child(1) img{
+    height: 558px;
+}
+
+.design-exemples-line-one .design-exemples-image:nth-child(2) img{
+    height: 350px;
+}
+
+.design-exemples-line-two .design-exemples-image:nth-child(1) img{
+    height: 275px;
+}
+
+.design-exemples-line-two .design-exemples-image:nth-child(2) img{
+    height: 624px;
+}
+
+/*Design exemples end*/
+
+/*Clients reviews*/
+
+.clients-reviews {
+    padding-top: 225px;
+    position: relative;
+    z-index: 1;
+}
+
+.clients-reviews-container h2 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.handshake {
+    display: flex;
+    padding-top: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.handshake-icon {
+    margin: 0 8px;
+}
+
+.handshake-line {
+    width: 32px;
+    height: 2px;
+    border-radius: 30px;
+    background: #E3B873;
+}
+
+.customers-recommend {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 39px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #363636;
+    text-align: center;
+}
+
+.customers-reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-review {
+    width: 376px;
+    height: 428px;
+    position: relative;
+    padding: 13px 32px 90px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.customer-review p {
+    padding-top: 23px;
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+}
+
+.customer-avatar img{
+    border-radius: 50%;
+}
+
+/*Чисто визуально шрифт жирный, но в макете этого нет*/
+.customer-name {
+    width: 150px;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #181818;
+}
+
+.terms-days {
+    width: 294px;
+    height: 54px;
+    position: absolute;
+    left: 0%;
+    bottom: -6%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.terms,
+.days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background: #E3B873;
+    color: #FFFFFF;
+}
+
+.terms {
+    width: 135px;
+}
+
+.days {
+    width: 158px;
+}
+
+.terms-value,
+.days-value {
+    margin-left: 15px;
+}
+
+/*Clients reviews end*/
+
+/*Contacts*/
+
+.stylish-helper-2 {
+    height: 416px;
+    background-image: url("../images/contacts/helper-background.jpg");
+    background-repeat: repeat-x;
+    z-index: -1;
+}
+
+.contacts {
+    position: relative;
+    padding-bottom: 90px;
+    background-image: url("../images/contacts/contacts-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-form {
+    width: 883px;
+    height: 445px;
+    position: absolute;
+    top: 185px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.question-form h3 {
+    margin: 34px 0px 46px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.name-phone {
+    display: flex;
+    justify-content: center;
+}
+
+
+.question-name,
+.question-phone,
+.question-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-phone {
+    margin-left: 55px;
+}
+
+.question-text {
+    margin: 49px 0px 48px;
+}
+
+.question-name label,
+.question-phone label,
+.question-text label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.question-name input,
+.question-phone input,
+.question-text input {
+    font-size: 14px;
+    line-height: 23px;
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #131313;
+    color: #FFFFFF;
+}
+
+.question-name input,
+.question-phone input {
+    width: 231px;
+}
+
+.question-text input {
+    width: 517px;
+}
+
+.question-name input::placeholder,
+.question-phone input::placeholder,
+.question-text input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.question-submit-button {
+    width: 200px;
+    height: 51px;
+    margin-top: 50px;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+.location {
+    width: 540px;
+    margin: 320px 0px 26px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.social-list {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.social-item:first-child{
+    margin-right: 15px;
+}
+
+.location-on-map {
+    width: 950px;
+    height: 470px;
+}
+
+/*Contacts end*/
