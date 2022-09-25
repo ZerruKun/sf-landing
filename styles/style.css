@@ -145,6 +145,7 @@ button:hover {
 .footer-menu-list {
     display: flex;
     margin-left: 95px;
+    margin-right: 114px;
 }
 
 .header-menu-item,
@@ -152,14 +153,14 @@ button:hover {
     margin-right: 47px;
 }
 
+.header-menu-item:last-child,
+.footer-menu-item:last-child {
+    margin-right: 0px;
+}
+
 .header-menu-item a:hover,
 .footer-menu-item a:hover {
     color: #E3B873;
-}
-
-.phone-number,
-.footer-phone-number {
-    margin-left: 67px;
 }
 
 .phone-number a,
@@ -468,7 +469,8 @@ button:hover {
 
 .online-control-name input,
 .online-control-phone input {
-    padding: 7px 0px;
+    font-size: 14px;
+    line-height: 23px;
     outline: 0;
     outline-offset: 0;
     border: none;
@@ -675,12 +677,14 @@ button:hover {
 .measuring-request-name input,
 .measuring-request-phone input,
 .measuring-request-email input {
-    padding: 7px 0px;
+    font-size: 14px;
+    line-height: 23px;
     outline: 0;
     outline-offset: 0;
     border: none;
-    background-color: #131313;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #131313;
+    color: #FFFFFF;
 }
 
 .measuring-request-form input::placeholder {
