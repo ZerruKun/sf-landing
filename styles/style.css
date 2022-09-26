@@ -1188,4 +1188,27 @@ button:hover {
 
 /*Media 1170 end*/
 
+/*Media 1100 end*/
+
+@media screen and (max-width: 1170px) {
+
+    .header-container,
+    .footer-container {
+        padding: 10px 0px;
+    }
+
+    .header-menu-list,
+    .footer-menu-list {
+        flex-direction: column;
+    }
+
+    .header-menu-item,
+    .footer-menu-item {
+        margin: 1px 0px;
+    }
+}
+
+/*Media 1100 end*/
+
+
 
