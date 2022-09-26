@@ -349,8 +349,8 @@ button:hover {
 }
 
 .project-image img {
-    max-width: 674px;
-    margin-left: 50px;
+    width: 674px;
+    padding-left: 50px;
 }
 
 /*Projects end*/
@@ -418,6 +418,9 @@ button:hover {
 .repairing-video video {
     width: 817px;
     height: 434px;
+/* 
+    width: 600px;
+    height: 317px */
 }
 
 /*Кнопка добавлена как на макете, не прячется при проигрывании видео*/ 
@@ -759,6 +762,7 @@ button:hover {
 
 .desing-name-list {
     margin-top: 47px;
+    margin-bottom: 97px;
 }
 
 .desing-name-item {
@@ -823,7 +827,7 @@ button:hover {
 /*Clients reviews*/
 
 .clients-reviews {
-    padding-top: 225px;
+    padding-top: 130px;
     position: relative;
     z-index: 1;
 }
@@ -1077,3 +1081,36 @@ button:hover {
 }
 
 /*Contacts end*/
+
+/*Media 1290*/
+
+@media screen and (max-width: 1290px) {
+    .header-container,
+    .footer-container {
+    justify-content:center;
+}
+
+    .header-menu-list,
+    .footer-menu-list {
+    display: flex;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+    .call-request-button,
+    .footer-call-request-button {
+    margin-left: 45px;
+}
+
+    .measuring-feature {
+        margin-left: 100px;
+    }
+
+    .design-exemples-images {
+        margin-left: 100px;
+    }
+}
+
+/*Media 1290 end*/
+
+
