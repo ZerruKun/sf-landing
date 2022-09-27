@@ -1729,6 +1729,17 @@ button:hover {
 
     .design-exemples {
         background-image: none;
+        margin-bottom: 150px;
+    }
+
+    .design-exemples-container {
+        position: relative;
+    }
+    
+    .design-exemples-images {
+        position: absolute;
+        top: 53px;
+        z-index: 1;
     }
 
     .design-exemples-images,
@@ -1738,9 +1749,13 @@ button:hover {
         height: 242px;
     }
 
+    .design-exemples-image:first-child {
+        margin-bottom: 0px;
+    }
+
     .design-previous-button,
     .design-next-button {
-        top: 93px;
+        top: 103px;
     }
 
     .design-previous-button {
@@ -1765,6 +1780,7 @@ button:hover {
     .question-form {
         order: 1;
         height: 530px;
+        margin-top: 130px;
         position: relative;
         top: 0px;
     }
@@ -1798,6 +1814,12 @@ button:hover {
 }
 
 /*Media 479 end*/
+
+/*Media 374 (fit 320)*/
+
+
+
+/*Media 374 end*/
 
 
 
