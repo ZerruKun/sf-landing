@@ -1,3 +1,11 @@
+/*
+    Не пиксель пёрфект.
+    Дополнительные брейкпоинты делал по своему усмотрению.
+    Некоторые размеры отсутсвуют - задавал примерные.
+    Есть строчки которые не представляю как перенести без использования br.
+    Некоторые стили специально разделены, для простоты отслеживания при чтении сверху вниз.
+*/
+
 /*Common*/
 
 @font-face {
@@ -41,7 +49,8 @@ h1 {
     color: #FFFFFF;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'YesevaOne Regular', cursive;
     font-style: normal;
     font-weight: 400;
@@ -64,7 +73,8 @@ button {
     border: none;
     outline: none;
     border-radius: 2px;
-    color: #FFFFFF;;
+    color: #FFFFFF;
+    ;
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 }
@@ -96,11 +106,11 @@ button:hover {
     cursor: pointer;
 }
 
-.checkbox{
+.checkbox {
     display: none;
 }
 
-.fake{
+.fake {
     width: 15px;
     height: 15px;
     display: inline-flex;
@@ -109,13 +119,13 @@ button:hover {
     color: #fff;
 }
 
-.fake::before{
-    content:"\2714";
+.fake::before {
+    content: "\2714";
     opacity: 0;
     transition: .2s;
 }
 
-.checkbox:checked + .fake::before{
+.checkbox:checked+.fake::before {
     opacity: 1;
 }
 
@@ -142,7 +152,7 @@ button:hover {
     align-items: center;
     font-size: 11px;
     line-height: 15px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .header-container {
@@ -208,7 +218,7 @@ button:hover {
 
 .general {
     background-image: url("../images/general/background.jpg");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
@@ -220,8 +230,8 @@ button:hover {
     max-width: 520px;
 }
 
-.general-container h1 span{
-    color: #E3B873;    
+.general-container h1 span {
+    color: #E3B873;
 }
 
 .general-container p {
@@ -294,7 +304,7 @@ button:hover {
 }
 
 .project-discription h2 {
-    width:200px;
+    width: 200px;
     font-size: 27px;
     line-height: 37px;
     letter-spacing: -0.07em;
@@ -362,7 +372,7 @@ button:hover {
 }
 
 .additional-menu-item div:hover {
-    background:#FFFFFF;
+    background: #FFFFFF;
     cursor: pointer;
 }
 
@@ -442,7 +452,7 @@ button:hover {
     /*~1.9*/
 }
 
-/*Кнопка добавлена как на макете, не прячется при проигрывании видео*/ 
+/*Кнопка добавлена как на макете, не прячется при проигрывании видео*/
 .play-button {
     width: 85px;
     height: 85px;
@@ -610,7 +620,7 @@ button:hover {
 .measuring-features {
     max-width: 650px;
     background-image: url("../images/repairing/features-background.jpg");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
@@ -750,7 +760,7 @@ button:hover {
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
 
-.piggy-bank{
+.piggy-bank {
     width: 72px;
     height: 72px;
 }
@@ -825,19 +835,19 @@ button:hover {
     left: 397px;
 }
 
-.design-exemples-line-one .design-exemples-image:nth-child(1) img{
+.design-exemples-line-one .design-exemples-image:nth-child(1) img {
     height: 558px;
 }
 
-.design-exemples-line-one .design-exemples-image:nth-child(2) img{
+.design-exemples-line-one .design-exemples-image:nth-child(2) img {
     height: 350px;
 }
 
-.design-exemples-line-two .design-exemples-image:nth-child(1) img{
+.design-exemples-line-two .design-exemples-image:nth-child(1) img {
     height: 275px;
 }
 
-.design-exemples-line-two .design-exemples-image:nth-child(2) img{
+.design-exemples-line-two .design-exemples-image:nth-child(2) img {
     height: 624px;
 }
 
@@ -913,7 +923,7 @@ button:hover {
     align-items: center;
 }
 
-.customer-avatar img{
+.customer-avatar img {
     border-radius: 50%;
 }
 
@@ -1094,7 +1104,7 @@ button:hover {
     margin-bottom: 40px;
 }
 
-.social-item:first-child{
+.social-item:first-child {
     margin-right: 15px;
 }
 
@@ -1109,9 +1119,10 @@ button:hover {
 /*Media 1290*/
 
 @media screen and (max-width: 1290px) {
+
     .header-container,
     .footer-container {
-        justify-content:center;
+        justify-content: center;
     }
 
     .header-menu-list,
@@ -1259,7 +1270,7 @@ button:hover {
 
     .projects-menu-list {
         margin-right: 0px;
-        justify-content:center;
+        justify-content: center;
         text-align: center;
     }
 
@@ -1445,7 +1456,7 @@ button:hover {
         margin-bottom: 63px;
         margin-left: 0px;
     }
-    
+
     .question-text {
         margin-top: 0px;
         margin-bottom: 23px;
@@ -1601,7 +1612,7 @@ button:hover {
     }
 
     .project-detailes div {
-        min-width:fit-content;
+        min-width: fit-content;
         padding-top: 27px;
     }
 
@@ -1687,7 +1698,7 @@ button:hover {
     }
 
     .online-control-name input,
-    .online-control-phone input{
+    .online-control-phone input {
         background: #131313;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
@@ -1735,7 +1746,7 @@ button:hover {
     .design-exemples-container {
         position: relative;
     }
-    
+
     .design-exemples-images {
         position: absolute;
         top: 53px;
@@ -1773,10 +1784,10 @@ button:hover {
 
     .contacts {
         padding-bottom: 0px;
-        background-image:none;
+        background-image: none;
         background-color: #131313;
     }
-    
+
     .question-form {
         order: 1;
         height: 530px;
@@ -1807,7 +1818,7 @@ button:hover {
         order: 4;
     }
 
-    .social-item img{
+    .social-item img {
         width: 39px;
         height: 39px;
     }
@@ -1900,9 +1911,4 @@ button:hover {
     }
 }
 
-
-
 /*Media 374 end*/
-
-
-
