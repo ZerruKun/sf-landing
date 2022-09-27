@@ -1817,6 +1817,89 @@ button:hover {
 
 /*Media 374 (fit 320)*/
 
+@media screen and (max-width: 374px) {
+    .container {
+        margin: 0 10px;
+    }
+
+    .cost-calculate-button,
+    .application-submit-button {
+        width: 310px;
+    }
+
+    .projects-br:last-child {
+        display: none;
+    }
+
+    .project-image-container {
+        width: 310px;
+    }
+
+    .projects-previous-button,
+    .projects-next-button {
+        top: 95px
+    }
+
+    .projects-previous-button {
+        left: 3px;
+    }
+
+    .projects-next-button {
+        right: 3px;
+    }
+
+    .project-detailes div:nth-child(1),
+    .project-detailes div:nth-child(3) {
+        padding-right: 30px;
+    }
+
+    .project-detailes div {
+        padding-right: 0px;
+    }
+
+    .repairing-video video {
+        width: 300px;
+        height: 163px;
+    }
+
+    .play-button {
+        top: 85px;
+        left: 130px;
+    }
+
+    .online-control-name,
+    .online-control-phone,
+    .registration-submit-button {
+        width: 300px;
+    }
+
+    .repair-type {
+        width: 310px;
+    }
+
+    .design-exemples-images,
+    .design-exemples-image,
+    .design-exemples-line-one .design-exemples-image:nth-child(1) img {
+        width: 310px;
+        height: 222px;
+    }
+
+    .question-form {
+        width: 318px;
+    }
+
+    .question-name input,
+    .question-phone input,
+    .question-text input,
+    .question-submit-button {
+        width: 310px;
+    }
+
+    .location-on-map {
+        width: 310px;
+    }
+}
+
 
 
 /*Media 374 end*/
