@@ -1078,6 +1078,10 @@ button:hover {
     color: #E3B873;
 }
 
+.location-br {
+    display: none;
+}
+
 .social-list {
     display: flex;
     margin-bottom: 40px;
@@ -1510,6 +1514,283 @@ button:hover {
 }
 
 /*Media 710 end*/
+
+/*Media 479 (fit 375)*/
+
+@media screen and (max-width: 479px) {
+    .container {
+        margin: 0 18px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .header-container {
+        justify-content: space-between;
+        padding: 23px 0px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .phone-number a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .call-request-button {
+        display: none;
+    }
+
+    .general-container h1 {
+        text-align: left;
+        font-size: 23px;
+        line-height: 31px;
+    }
+
+    .general-container p {
+        text-align: left;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .cost-calculate-button {
+        border: none;
+        background: #E3B873;
+    }
+
+    .projects-container {
+        padding-top: 36px;
+    }
+
+    .projects-contant {
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .project-opening h2 {
+        padding-top: 0px;
+    }
+
+    .project-opening p {
+        text-align: center;
+        font-size: 11px;
+        line-height: 17px;
+    }
+
+    .projects-br:last-child {
+        display: block;
+    }
+
+    .projects-menu-list {
+        display: none;
+    }
+
+    .project-detailes {
+        padding-top: 304px;
+        justify-content: left;
+    }
+
+    .project-detailes div {
+        min-width:fit-content;
+        padding-top: 27px;
+    }
+
+    .project-detailes div:nth-child(1) {
+        padding-right: 75px;
+    }
+
+    .project-detailes div:nth-child(3) {
+        padding-right: 40px;
+    }
+
+    .projects-additional-menu {
+        display: none;
+    }
+
+    .projects-previous-button,
+    .projects-next-button {
+        display: block;
+        position: absolute;
+        top: 103px;
+    }
+
+    .projects-previous-button {
+        left: 13px;
+    }
+
+    .projects-next-button {
+        right: 13px;
+    }
+
+    .project-image-container {
+        width: 340px;
+        height: 241px;
+        position: absolute;
+        top: 200px;
+    }
+
+    .online-control {
+        background: #131313;
+    }
+
+    .repairing-video video {
+        width: 340px;
+        height: 207px;
+    }
+
+    .stylish-helper {
+        display: none;
+    }
+
+    .play-button {
+        width: 37px;
+        height: 37px;
+        top: 115px;
+        left: 152px;
+    }
+
+    .dividing-line {
+        margin: 28px auto 21px;
+    }
+
+    .online-control {
+        padding-bottom: 0px;
+    }
+
+    .online-control-container p {
+        width: fit-content;
+        padding-top: 0px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    .online-control-registration {
+        margin-top: 61px;
+        align-items: flex-start;
+    }
+
+    .online-control-name label,
+    .online-control-phone label {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .online-control-name input,
+    .online-control-phone input{
+        background: #131313;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .online-control-name input::placeholder,
+    .online-control-phone input::placeholder {
+        color: #FFFFFF;
+    }
+
+    .online-control-personal {
+        padding-bottom: 87px;
+    }
+
+    .online-control-personal .checkbox-text {
+        color: #FFFFFF;
+    }
+
+    .repairing {
+        padding-bottom: 150px;
+    }
+
+    .repairing-container {
+        padding-top: 83px;
+    }
+
+    .registration-submit-button {
+        position: absolute;
+        bottom: -25px;
+    }
+
+    .repair-discription {
+        top: 58%;
+    }
+
+    .measuring-request,
+    .money-safe-container {
+        display: none;
+    }
+
+    .design-exemples {
+        background-image: none;
+    }
+
+    .design-exemples-images,
+    .design-exemples-image,
+    .design-exemples-line-one .design-exemples-image:nth-child(1) img {
+        width: 340px;
+        height: 242px;
+    }
+
+    .design-previous-button,
+    .design-next-button {
+        top: 93px;
+    }
+
+    .design-previous-button {
+        left: 3%;
+    }
+
+    .design-next-button {
+        right: 3%;
+    }
+
+    .clients-reviews,
+    .stylish-helper-2 {
+        display: none;
+    }
+
+    .contacts {
+        padding-bottom: 0px;
+        background-image:none;
+        background-color: #131313;
+    }
+    
+    .question-form {
+        order: 1;
+        height: 530px;
+        position: relative;
+        top: 0px;
+    }
+
+    .location {
+        order: 3;
+        width: 310px;
+        margin-top: 45px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .location-br {
+        display: block;
+    }
+
+    .location-on-map {
+        order: 2;
+        width: 340px;
+        margin-top: 50px;
+    }
+
+    .social-list {
+        order: 4;
+    }
+
+    .social-item img{
+        width: 39px;
+        height: 39px;
+    }
+}
+
+/*Media 479 end*/
 
 
 
